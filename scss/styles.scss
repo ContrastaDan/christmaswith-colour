@@ -1,3 +1,414 @@
-body {
-	background: url(../images/gpuk2.jpg) no-repeat;
+@font-face {
+    font-family: MinionPro;
+    src: url(/fonts/MinionPro-Regular.otf);
+    font-weight: regular;
 }
+@font-face {
+    font-family: swiss;
+    src: url(/fonts/swiss.ttf );
+    font-weight: regular;
+}
+@media screen and (max-width: 320px) {
+    body {
+    	background: url(../images/background320.png) no-repeat;
+    }
+    .container {
+    	width: 100%;
+    	height: relative;
+    }
+
+ #top {
+ 	width: 100%;
+
+ 	.buyonline {
+    position: fixed!important;
+    bottom: 50px;
+    width: 100%;
+    height: 80px;
+    z-index: 10000;
+    display: none;
+    left: 0;
+    pointer-events: none;
+
+    .onlinebutton {
+    background-color: #00DAE5;
+    width: 205px;
+    margin: 0 auto;
+    padding: 12px 12px 12px 12px !important;
+    margin-top: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #00D1DC;
+    pointer-events: all;
+}
+}
+
+.logo {
+	background: url(../images/mobilelogo.png) no-repeat;
+	width: 275px;
+	height: 211px;
+	position: relative;
+	text-align: center;
+	margin-top: 15%;
+}
+.items {
+	text-align:center;
+	left:50%;
+}
+
+#content {
+	width: 100%;
+
+	 	p {
+	 		margin-top: 25%;
+	 		text-align: center;
+	 		font-family: swiss;
+	 		font-weight: bold-italic;
+	 		max-width: 100%;
+	 		color: #3B2466;
+	 	}
+}
+.button {
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 10%;	
+	
+	a {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: #3B2466;
+		color: white;
+		font-family: swiss;
+		font-weight: regular;
+		text-align: center;
+		width: 80%;
+		text-decoration: none;
+		letter-spacing: 3px;
+		position: absolute;
+		left: 10%;
+		top: 20%;
+	}
+
+	a:hover {
+		background-color: #3d2270;
+	}
+	a:active {
+		background-color: black;
+	}
+}
+#downarrow {
+	width:100%;
+	margin-top: 35%;
+
+	a {
+		margin-left: 40%;
+		margin-top: 5%;
+
+	}
+	a:hover {
+		background-color: none;
+	}
+	a:active {
+		background-color: #3B2466;
+	}
+
+
+}
+p {
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 10%;
+}
+}
+#purchase {
+	width: 100%;
+
+}
+}
+#sponsors {
+	width:100%;
+
+		p {
+			margin-top: 20%;
+			text-align: center;
+			letter-spacing: 4px;
+			font-weight: bold;
+			margin-bottom: 10%;
+			color: white;
+		}
+
+	#overlay {
+   display:none;    
+   position:fixed;  
+   left:0px;       
+   top:0px;         
+   width:100%;      
+   height:100%;     
+   background:#000; 
+   opacity:0.5;     
+   z-index:99999;  
+}
+
+#popup {
+   display:none;
+   position:fixed;
+   left:50%;            
+   top:50%;             
+   width:300px;
+   height:150px;
+   margin-top:-75px;
+   margin-left:-150px;
+   background:#FFFFFF;
+   border:2px solid #000;
+   z-index:100000;
+}
+}
+#social {
+	width: 100%;
+	
+}
+#footer {
+	width: 100%;
+	text-align: center;	
+}
+@media screen and (min-width: 321px) {
+body {
+	background: url(../images/background480.png) no-repeat;
+}
+#top {
+ 	width: 100%;
+
+.logo {
+	background: url(../images/mobilelogo.png) no-repeat;
+	width: 275px;
+	height: 211px;
+	position: relative;
+	text-align: center;
+	margin-top: 15%;
+}
+
+#content {
+	width: 100%;
+
+	 	p {
+	 		margin-top: 10%;
+	 		text-align: center;
+	 		font-family: swiss;
+	 		font-weight: bold-italic;
+	 		max-width: 100%;
+	 		color: #3B2466;
+	 	}
+}
+.button {
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 10%;	
+	
+	a {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: #3B2466;
+		color: white;
+		font-family: swiss;
+		font-weight: regular;
+		text-align: center;
+		width: 80%;
+		text-decoration: none;
+		letter-spacing: 3px;
+		position: absolute;
+		left: 10%;
+		top: 20%;
+	}
+
+	a:hover {
+		background-color: #3d2270;
+	}
+	a:active {
+		background-color: black;
+	}
+}
+#downarrow {
+	width:100%;
+	margin-top: 45%;
+
+	a {
+		margin-left: 40%;
+		margin-top: 25%;
+
+	}
+	a:hover {
+		background-color: none;
+	}
+	a:active {
+		background-color: #3B2466;
+	}
+
+
+}
+p {
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 10%;
+}
+}
+#slider {
+	width: 100%;
+	height: 10%;
+
+		
+}
+}
+#sponsors {
+	width:100%;
+
+		p {
+			text-align: center;
+			letter-spacing: 2px;
+			font-family: swiss;
+			margin-top: -13%;
+		}
+		#rmch {
+			margin-left: 15%;
+			margin-top: 25%;
+		
+		a {
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-family: swiss;
+			letter-spacing: 3px;
+			margin-top:25%;
+			margin-left: 20%;
+		}
+	}
+		#gfsmith {
+			margin-left:20%;
+			margin-top: 35%;
+		}
+		a {
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-family: swiss;
+			letter-spacing: 3px;
+			margin-top:100%;
+			margin-left: 15%;
+		}
+}
+#social {
+	width: 100%;
+	
+}
+#footer {
+	width: 100%;
+	text-align: center;	
+}
+
+@media screen and (min-width:480px){
+	.class { display: none; }
+	body {
+			background: url(../images/background.png) no-repeat;
+}
+#top {
+ 	width: 100%;
+
+.logo {
+	background: url(../images/mobilelogo.png) no-repeat;
+	width: 275px;
+	height: 211px;
+	position: relative;
+	text-align: center;
+	margin-top: 15%;
+	left: 40%;
+}
+
+#content {
+	width: 100%;
+
+	 	p {
+	 		margin-top: 10%;
+	 		text-align: center;
+	 		font-family: swiss;
+	 		font-weight: bold-italic;
+	 		max-width: 100%;
+	 		color: #3B2466;
+	 	}
+}
+.button {
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 10%;	
+	
+	a {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: #3B2466;
+		color: white;
+		font-family: swiss;
+		font-weight: regular;
+		text-align: center;
+		width: 40%;
+		text-decoration: none;
+		letter-spacing: 3px;
+		position: absolute;
+		left: 30%;
+		top: 20%;
+	}
+
+	a:hover {
+		background-color: #3d2270;
+	}
+	a:active {
+		background-color: black;
+	}
+}
+#downarrow {
+	width:100%;
+	margin-top: 35%;
+
+	a {
+		margin-left: 40%;
+		margin-top: 25%;
+
+	}
+	a:hover {
+		background-color: none;
+	}
+	a:active {
+		background-color: #3B2466;
+	}
+
+
+}
+p {
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 10%;
+	font-family: swiss;
+}
+}
+
+}
+#sponsors {
+	width:100%;
+
+		p {
+			text-align: center;
+			letter-spacing: 2px;
+			font-weight: bold;
+			margin-bottom: 10%;
+		}
+}
+#social {
+	width: 100%;
+	
+}
+#footer {
+	width: 100%;
+	text-align: center;	
+}
+
+	
