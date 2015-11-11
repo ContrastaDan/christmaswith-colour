@@ -8,7 +8,7 @@
     src: url(/fonts/swiss.ttf );
     font-weight: regular;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     body {
     	background: url(../images/background320.png) no-repeat;
     }
@@ -20,29 +20,6 @@
  #top {
  	width: 100%;
 
- 	.buyonline {
-    position: fixed!important;
-    bottom: 50px;
-    width: 100%;
-    height: 80px;
-    z-index: 10000;
-    display: none;
-    left: 0;
-    pointer-events: none;
-
-    .onlinebutton {
-    background-color: #00DAE5;
-    width: 205px;
-    margin: 0 auto;
-    padding: 12px 12px 12px 12px !important;
-    margin-top: 20px;
-    color: #ffffff;
-    cursor: pointer;
-    border: 1px solid #00D1DC;
-    pointer-events: all;
-}
-}
-
 .logo {
 	background: url(../images/mobilelogo.png) no-repeat;
 	width: 275px;
@@ -50,6 +27,7 @@
 	position: relative;
 	text-align: center;
 	margin-top: 15%;
+	
 }
 .items {
 	text-align:center;
@@ -60,7 +38,7 @@
 	width: 100%;
 
 	 	p {
-	 		margin-top: 25%;
+	 		margin-top: 35%;
 	 		text-align: center;
 	 		font-family: swiss;
 	 		font-weight: bold-italic;
@@ -130,42 +108,69 @@ p {
 	width:100%;
 
 		p {
-			margin-top: 20%;
 			text-align: center;
-			letter-spacing: 4px;
-			font-weight: bold;
-			margin-bottom: 10%;
+			letter-spacing: 2px;
+			font-family: swiss;
+			margin-top: -13%;
+		}
+		#rmch {
+			margin-left: 15%;
+			margin-top: 25%;
+		
+		a {
+			text-align: center;
+			text-decoration: none;
 			color: white;
+			font-family: swiss;
+			letter-spacing: 3px;
+			margin-top:25%;
+			margin-left: 20%;
+		}
+	}
+		#gfsmith {
+			margin-left:20%;
+			margin-top: 30%;
+		
+		a {
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-family: swiss;
+			letter-spacing: 3px;
+			margin-top:100%;
+			margin-left: 15%;
+		}
+	}
+		#gh {
+			margin-left:20%;
+			margin-top: 35%;
+		}
+		#cc {
+			margin-left:5%;
+			margin-top: 65%;
 		}
 
-	#overlay {
-   display:none;    
-   position:fixed;  
-   left:0px;       
-   top:0px;         
-   width:100%;      
-   height:100%;     
-   background:#000; 
-   opacity:0.5;     
-   z-index:99999;  
-}
-
-#popup {
-   display:none;
-   position:fixed;
-   left:50%;            
-   top:50%;             
-   width:300px;
-   height:150px;
-   margin-top:-75px;
-   margin-left:-150px;
-   background:#FFFFFF;
-   border:2px solid #000;
-   z-index:100000;
-}
 }
 #social {
 	width: 100%;
+
+	p{
+		margin-top: 55%;
+		text-align: center;
+		color: white;
+		letter-spacing: 2px;
+		font-family: swiss;
+	}
+
+	#fb {
+		margin-top: 25%;
+		margin-left: 10%;
+		width: 33%;
+		float: left;
+	}
+	#twitter {
+		margin-top: 25%;
+	}
 	
 }
 #footer {
@@ -256,8 +261,6 @@ p {
 #slider {
 	width: 100%;
 	height: 10%;
-
-		
 }
 }
 #sponsors {
