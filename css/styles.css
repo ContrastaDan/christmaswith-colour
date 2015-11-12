@@ -6,7 +6,10 @@
   font-family: swiss;
   src: url(/fonts/swiss.ttf);
   font-weight: regular; }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
+  #designs {
+    display: none; }
+
   body {
     background: url(../images/background320.png) no-repeat; }
 
@@ -16,25 +19,6 @@
 
   #top {
     width: 100%; }
-    #top .buyonline {
-      position: fixed !important;
-      bottom: 50px;
-      width: 100%;
-      height: 80px;
-      z-index: 10000;
-      display: none;
-      left: 0;
-      pointer-events: none; }
-      #top .buyonline .onlinebutton {
-        background-color: #00DAE5;
-        width: 205px;
-        margin: 0 auto;
-        padding: 12px 12px 12px 12px !important;
-        margin-top: 20px;
-        color: #ffffff;
-        cursor: pointer;
-        border: 1px solid #00D1DC;
-        pointer-events: all; }
     #top .logo {
       background: url(../images/mobilelogo.png) no-repeat;
       width: 275px;
@@ -48,7 +32,7 @@
     #top #content {
       width: 100%; }
       #top #content p {
-        margin-top: 25%;
+        margin-top: 35%;
         text-align: center;
         font-family: swiss;
         font-weight: bold-italic;
@@ -97,41 +81,76 @@
 #sponsors {
   width: 100%; }
   #sponsors p {
-    margin-top: 20%;
     text-align: center;
-    letter-spacing: 4px;
-    font-weight: bold;
-    margin-bottom: 10%;
-    color: white; }
-  #sponsors #overlay {
-    display: none;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.5;
-    z-index: 99999; }
-  #sponsors #popup {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 300px;
-    height: 150px;
-    margin-top: -75px;
-    margin-left: -150px;
-    background: #FFFFFF;
-    border: 2px solid #000;
-    z-index: 100000; }
+    letter-spacing: 2px;
+    font-family: swiss;
+    margin-top: -13%; }
+  #sponsors #rmch {
+    margin-left: 15%;
+    margin-top: 25%; }
+    #sponsors #rmch a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-family: swiss;
+      letter-spacing: 3px;
+      margin-top: 25%;
+      margin-left: 20%; }
+  #sponsors #gfsmith {
+    margin-left: 20%;
+    margin-top: 30%; }
+    #sponsors #gfsmith a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-family: swiss;
+      letter-spacing: 3px;
+      margin-top: 100%;
+      margin-left: 15%; }
+  #sponsors #gh {
+    margin-left: 20%;
+    margin-top: 35%; }
+    #sponsors #gh a {
+      margin-top: 10%; }
+  #sponsors #cc {
+    margin-left: 5%;
+    margin-top: 65%; }
 
 #social {
   width: 100%; }
+  #social p {
+    margin-top: 55%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: swiss; }
+  #social #fb {
+    float: left;
+    margin-top: 10%;
+    width: 33%; }
+  #social #twitter {
+    float: left;
+    margin-top: 10%;
+    width: 33%; }
+  #social #insta {
+    float: left;
+    margin-top: 10%;
+    width: 33%; }
+  #social #hash {
+    margin-top: 50%;
+    text-align: center;
+    font-family: swiss;
+    letter-spacing: 3px; }
 
 #footer {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
+  #footer img {
+    margin-top: 35%; }
+  #footer p {
+    text-align: center;
+    font-family: swiss;
+    letter-spacing: 2px;
+    color: white; }
 
 @media screen and (min-width: 321px) {
   body {
@@ -234,7 +253,7 @@
   text-align: center; }
 
 @media screen and (min-width: 480px) {
-  .class {
+  #slider {
     display: none; }
 
   body {
@@ -309,5 +328,4 @@
   width: 100%; }
 
 #footer {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
