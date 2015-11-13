@@ -8,6 +8,7 @@
  	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
   <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/shopify.css"/>
+  <link rel="stylesheet" type="text/css" href="css/flickity.css"/>
 	<title>Christmas with colour</title>
   </head>
   <body>
@@ -27,10 +28,12 @@
   </section>
   <section id="slider">
   <div class="container">
-  <ul class="bxslider">
-  <li><img src="images/starwars_Chewiemicro.png" /></li>
-  <li><img src="/images/quality_stmicro.png" /></li>
-  </ul>
+        <div class="gallery js-flickity"
+          data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+          <div class="gallery-cell"><img src="images/starwars_Chewiemicro.png"></div>
+          <div class="gallery-cell"><img src="images/starwars_Chewiemicro.png"></div>
+          <div class="gallery-cell"><img src="images/starwars_Chewiemicro.png"></div>
+        </div>
   </div>  
   </section>
   <section id="designs">
@@ -83,5 +86,6 @@
   <script src="/js/jquery.bxslider.js"></script>
   <script src="/js/slider.js"></script>
   <script src="/js/script.js"></script>
+  <script src="/js/flickity.pkgd.js"></script>
   </body>
 </html>

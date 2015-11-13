@@ -107,6 +107,7 @@ p {
 }
 #sponsors {
 	width:100%;
+	margin-top: 5%;
 
 		p {
 			text-align: center;
@@ -117,6 +118,7 @@ p {
 		#rmch {
 			margin-left: 15%;
 			margin-top: 25%;
+			float: left;
 		
 		a {
 			text-align: center;
@@ -131,6 +133,7 @@ p {
 		#gfsmith {
 			margin-left:20%;
 			margin-top: 30%;
+			float: left;
 		
 		a {
 			text-align: center;
@@ -145,6 +148,7 @@ p {
 		#gh {
 			margin-left:20%;
 			margin-top: 35%;
+			float: left;
 
 			a {
 				margin-top: 10%;
@@ -153,6 +157,7 @@ p {
 		#cc {
 			margin-left:5%;
 			margin-top: 65%;
+			float: left;
 		}
 
 }
@@ -203,20 +208,19 @@ p {
 		color: white;
 	}
 }
-@media screen and (min-width: 321px) {
+@media screen and (min-width:361px) {
+	#designs {display:none;}
 body {
-	background: url(../images/background480.png) no-repeat;
+	background: url(../images/background.png) no-repeat;
 }
 #top {
  	width: 100%;
 
 .logo {
-	background: url(../images/mobilelogo.png) no-repeat;
-	width: 275px;
-	height: 211px;
-	position: relative;
-	text-align: center;
-	margin-top: 15%;
+	background: url(../images/logo.png) no-repeat;
+	width:auto;
+	height:auto;
+	
 }
 
 #content {
@@ -285,8 +289,12 @@ p {
 }
 }
 #slider {
-	width: 100%;
-	height: 10%;
+	width:100%;
+
+	img {
+			width: 100%;
+			height: auto;
+		}
 }
 }
 #sponsors {
@@ -301,6 +309,7 @@ p {
 		#rmch {
 			margin-left: 15%;
 			margin-top: 25%;
+			float: left;
 		
 		a {
 			text-align: center;
@@ -314,8 +323,9 @@ p {
 	}
 		#gfsmith {
 			margin-left:20%;
-			margin-top: 35%;
-		}
+			margin-top: 30%;
+			float: right;
+		
 		a {
 			text-align: center;
 			text-decoration: none;
@@ -325,6 +335,22 @@ p {
 			margin-top:100%;
 			margin-left: 15%;
 		}
+	}
+		#gh {
+			margin-left:20%;
+			margin-top: 35%;
+			float: left;
+
+			a {
+				margin-top: 10%;
+			}
+		}
+		#cc {
+			margin-left:5%;
+			margin-top: 65%;
+			float: right;
+		}
+
 }
 #social {
 	width: 100%;
