@@ -10,6 +10,9 @@
   #designs {
     display: none; }
 
+  .mobilenoshow {
+    display: none; }
+
   body {
     background-color: #f5d6e0; }
 
@@ -22,9 +25,7 @@
     #top .logo {
       background: url(../images/mobilelogo.png) no-repeat;
       width: 275px;
-      height: 211px;
-      text-align: center;
-      margin-top: 15%; }
+      height: 211px; }
     #top .items {
       text-align: center;
       left: 50%; }
@@ -78,13 +79,18 @@
   #purchase {
     width: 100%; } }
 #sponsors {
-  width: 100%;
-  margin-top: 5%; }
-  #sponsors p {
-    text-align: center;
-    letter-spacing: 2px;
-    font-family: swiss;
-    margin-top: -13%; }
+  width: 100%; }
+  #sponsors .banner {
+    background-color: #EC7000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    margin-top: 90%; }
+    #sponsors .banner p {
+      font-family: swiss;
+      font-weight: bold;
+      color: #FDE755;
+      text-align: center; }
   #sponsors .rmch {
     background-color: #3b2466;
     margin-top: 25%;
@@ -121,16 +127,16 @@
       text-align: center;
       color: #3b2466;
       margin-top: 20%; }
-  #sponsors .gh {
+  #sponsors .ghi {
     background-color: #ec7000;
     float: left;
     width: 100%;
     padding-top: 15%;
     padding-bottom: 15%; }
-    #sponsors .gh img {
+    #sponsors .ghi img {
       padding-left: 25%;
       margin-top: 10%; }
-    #sponsors .gh a {
+    #sponsors .ghi a {
       font-family: swiss;
       font-weight: bold;
       color: white;
@@ -159,7 +165,7 @@
       padding-left: 30%; }
 
 #social {
-  width: 100%;
+  width: 100vw;
   background-color: #7e5ba0; }
   #social p {
     font-family: swiss;
@@ -194,7 +200,7 @@
     letter-spacing: 2px;
     color: white; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   #designs {
     display: none; }
 
@@ -262,7 +268,6 @@
     margin-top: -13%; }
   #sponsors #rmch {
     margin-left: 15%;
-    margin-top: 25%;
     float: left; }
     #sponsors #rmch a {
       text-align: center;
@@ -302,15 +307,17 @@
   width: 100%;
   text-align: center; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1024px) {
   #slider {
+    display: none; }
+
+  .banner {
     display: none; }
 
   body {
     background-color: #f5d9e6; }
 
   #top {
-    background: url(../image/BACKGROUND-IMAGE-TOP.png);
     width: 100%; }
     #top .logo {
       background: url(../images/Logo-GIF.gif) no-repeat;
@@ -319,7 +326,7 @@
       position: relative;
       text-align: center;
       margin-top: 5%;
-      left: 30%; }
+      left: 35%; }
     #top #content {
       width: 100%; }
       #top #content p {
@@ -328,23 +335,24 @@
         font-family: swiss;
         font-weight: bold-italic;
         font-size: 20px;
+        letter-spacing: 3px;
         max-width: 100%;
         color: #3B2466; }
     #top .button {
       position: relative; }
       #top .button a {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
         background-color: #3B2466;
         color: white;
         font-family: swiss;
         font-weight: regular;
         text-align: center;
-        width: 40%;
+        width: 15%;
         text-decoration: none;
         letter-spacing: 3px;
         position: absolute;
-        left: 30%;
+        left: 42%;
         top: -20%; }
       #top .button a:hover {
         background-color: #3d2270; }
@@ -369,74 +377,172 @@
       text-align: center; }
     #top #designs {
       width: 100%; }
-      #top #designs .container {
-        width: 100%;
-        background-color: black; }
       #top #designs .image {
-        max-width: 1920px;
-        position: fixed, center; }
-
-  .banner {
-    background-color: #EC7000;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 100%;
-    position: static; }
-    .banner p {
-      font-family: swiss;
-      font-weight: bold;
-      color: #FDE755;
-      text-align: center; }
+        max-width: 100%; }
 
   #sponsors {
     width: 100%; }
-    #sponsors p {
-      margin-top: 4%;
+    #sponsors .rmch {
+      background-color: #3b2466;
+      float: left;
+      width: 100%;
+      padding-top: 3%;
+      padding-bottom: 3%; }
+      #sponsors .rmch img {
+        margin-top: 5%;
+        padding-left: 10%; }
+      #sponsors .rmch h4 {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: right;
+        margin-right: 10%; }
+      #sponsors .rmch p {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: right;
+        margin-top: 8%;
+        margin-right: -17%; }
+      #sponsors .rmch a {
+        font-family: swiss;
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin-top: 8%; }
+      #sponsors .rmch a.active {
+        background-color: #ec7000; }
+    #sponsors .gfsmith {
+      background-color: #f5d9e6;
+      width: 100%;
+      padding-top: 20%;
+      padding-bottom: 30%; }
+      #sponsors .gfsmith img {
+        float: right;
+        margin-right: 20%;
+        margin-top: 7%; }
+      #sponsors .gfsmith h4 {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: left;
+        margin-top: 5%;
+        margin-left: 10%; }
+      #sponsors .gfsmith p {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: left;
+        margin-top: 10%;
+        margin-right: -7%; }
+      #sponsors .gfsmith a {
+        font-family: swiss;
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        float: left;
+        margin-bottom: 4%; }
+    #sponsors .ghi {
+      background-color: #ec7000;
+      float: left;
+      width: 100%;
+      padding: inherit; }
+      #sponsors .ghi img {
+        float: left;
+        margin-top: 8%;
+        padding-left: 10%; }
+      #sponsors .ghi h4 {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: right; }
+      #sponsors .ghi p {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: right;
+        margin-top: 5%; }
+      #sponsors .ghi a {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        display: block;
+        text-decoration: none;
+        text-align: center; }
+    #sponsors .cc {
+      background-color: #3b2466;
+      float: left;
+      width: 100%;
+      padding: inherit;
+      padding-top: 10%;
+      padding-bottom: 5%; }
+      #sponsors .cc img {
+        float: right;
+        margin-right: 10%;
+        padding-top: 2%; }
+      #sponsors .cc h4 {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: left;
+        margin-top: -3%;
+        margin-left: 5%; }
+      #sponsors .cc p {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        float: left; }
+      #sponsors .cc a {
+        font-family: swiss;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        display: block;
+        text-decoration: none;
+        padding-top: 10%;
+        padding-left: 47%; }
+
+  #social {
+    width: 100%;
+    background-color: #7E5BA0;
+    float: left; }
+    #social p {
+      font-family: swiss;
+      font-weight: bold;
+      font-size: 24px;
       text-align: center;
       color: white;
-      letter-spacing: 2px;
-      font-family: swiss;
-      font-size: 32px; }
-    #sponsors .container {
-      width: 100%;
-      background-color: #3b2466;
-      height: auto; }
-      #sponsors .container .rmch {
-        width: 100%;
-        background-color: black;
-        float: left;
-        overflow: hidden; }
-    #sponsors .gfsmith {
-      background-color: #f5d9e6; }
-    #sponsors .gh {
-      background-color: #ed6f01; }
-    #sponsors .cc {
-      background-color: #ed6f01; }
-
-  #social width
-  .socials {
-    width: 100%;
-    height: relative;
-    background-color: #7e5ba0; }
-  #social #fb {
-    float: left;
-    margin-top: 10%;
-    position: inline-block;
-    width: 33%; }
-  #social #twitter {
-    float: left;
-    margin-top: 10%;
-    width: 33%; }
-  #social #insta {
-    float: left;
-    margin-top: 10%;
-    width: 33%; }
-  #social p {
-    font-family: swiss;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center; }
+      letter-spacing: 3px;
+      margin-top: 2%; }
 
   #footer {
     background-color: #f5d9e6;
-    width: 100%; } }
+    width: 100%; }
+    #footer .container {
+      width: 100%;
+      float: left;
+      margin-top: -30%; }
+    #footer img {
+      text-align: center; } }

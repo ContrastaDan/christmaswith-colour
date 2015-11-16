@@ -10,6 +10,7 @@
 }
 @media screen and (max-width: 360px) {
 	#designs { display:none;}
+	.mobilenoshow {display:none;}
     body {
     	background-color: #f5d6e0;
     	
@@ -26,9 +27,6 @@
 	background: url(../images/mobilelogo.png) no-repeat;
 	width: 275px;
 	height: 211px;
-	text-align: center;
-	margin-top: 15%;
-	
 }
 .items {
 	text-align:center;
@@ -105,16 +103,22 @@ p {
 
 }
 }
+
 #sponsors {
 	width:100%;
-	margin-top: 5%;
-
+		.banner {
+			background-color: #EC7000;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			width: 100%;
+			margin-top: 90%;
 		p {
-			text-align: center;
-			letter-spacing: 2px;
 			font-family: swiss;
-			margin-top: -13%;
+			font-weight: bold;
+			color:#FDE755;
+			text-align: center;
 		}
+}
 		.rmch {
 			background-color: #3b2466;
 			margin-top: 25%;
@@ -161,7 +165,7 @@ p {
 			margin-top: 20%;			
 		}
 	}
-		.gh {
+		.ghi {
 			background-color: #ec7000;
 			float: left;
 			width: 100%;
@@ -208,7 +212,7 @@ p {
 
 }
 #social {
-	width: 100%;
+	width: 100vw;
 	background-color: #7e5ba0;
 
 	p{
@@ -255,7 +259,7 @@ p {
 		color: white;
 	}
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
 	#designs {display:none;}
 body {
 	
@@ -351,7 +355,6 @@ p {
 		}
 		#rmch {
 			margin-left: 15%;
-			margin-top: 25%;
 			float: left;
 		
 		a {
@@ -404,13 +407,13 @@ p {
 	text-align: center;	
 }
 
-@media screen and (min-width:480px){
+@media screen and (min-width:1024px) {
 	#slider { display: none; }
+	.banner { display: none; }
 	body {
 		background-color: #f5d9e6;
 }
 #top {
-	background: url(../image/BACKGROUND-IMAGE-TOP.png);
  	width: 100%;
 
 .logo {
@@ -420,7 +423,7 @@ p {
 	position: relative;
 	text-align: center;
 	margin-top: 5%;
-	left: 30%;
+	left: 35%;
 }
 
 #content {
@@ -432,6 +435,7 @@ p {
 	 		font-family: swiss;
 	 		font-weight: bold-italic;
 	 		font-size: 20px;
+	 		letter-spacing: 3px;
 	 		max-width: 100%;
 	 		color: #3B2466;
 	 	}
@@ -440,18 +444,18 @@ p {
 	position: relative;	
 	
 	a {
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
 		background-color: #3B2466;
 		color: white;
 		font-family: swiss;
 		font-weight: regular;
 		text-align: center;
-		width: 40%;
+		width: 15%;
 		text-decoration: none;
 		letter-spacing: 3px;
 		position: absolute;
-		left: 30%;
+		left: 42%;
 		top: -20%;
 	}
 
@@ -489,97 +493,213 @@ p {
 }
 #designs {
 	width: 100%;
-	.container {
-		width: 100%;
-		background-color: black;
-	}
-
+	
 	.image {
-		max-width: 1920px;
-		position: fixed, center;
+		max-width: 100%;
 	}
 }
-}
-.banner {
-	background-color: #EC7000;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	width: 100%;
-	position: static;
-
-		p {
-			font-family: swiss;
-			font-weight: bold;
-			color:#FDE755;
-			text-align: center;
-		}
 }
 #sponsors {
-width: 100%;
+	width:100%;
+		.rmch {
+			background-color: #3b2466;
+			float: left;
+			width: 100%;
+			padding-top: 3%;
+			padding-bottom: 3%;
 
-	p{
-		margin-top: 4%;
-		text-align: center;
-		color: white;
-		letter-spacing: 2px;
-		font-family: swiss;
-		font-size: 32px;
+			img {
+				margin-top: 5%;
+				padding-left: 10%;
+			}
+			h4 {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: right;
+				margin-right: 10%;
+			}
+			p {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: right;
+				margin-top: 8%;
+				margin-right: -17%;
+			}
+		a {
+			font-family: swiss;
+			font-weight: bold;
+			letter-spacing: 2px;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color:white;
+			margin-top: 8%;
+		}
+		a.active {
+			background-color:#ec7000;
+		}
 	}
-.container {
-	width: 100%;
-	background-color: #3b2466;
-	height: auto;
+		.gfsmith {
+			background-color: #f5d9e6;
+			width: 100%;
+			padding-top: 20%;
+			padding-bottom: 30%;
+			
+			img {
+				float: right;
+				margin-right: 20%;
+				margin-top: 7%;
+			}
+			h4 {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: left;
+				margin-top: 5%;
+				margin-left: 10%;
+			}
+			p {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: left;
+				margin-top: 10%;
+				margin-right: -7%;
+			}
 
-	.rmch {
-		width: 100%;
-		background-color: black;
-		float: left;
-		overflow: hidden;
+		a {
+			font-family: swiss;
+			font-weight: bold;
+			letter-spacing: 2px;
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			float: left;
+			margin-bottom: 4%;
+		}
 	}
-}
-	.gfsmith {
-		background-color: #f5d9e6;
-	}
-	.gh {
-		background-color:#ed6f01;
-	}
-	.cc {
-		background-color: #ed6f01;
-	}
+		.ghi {
+			background-color: #ec7000;
+			float: left;
+			width: 100%;
+			padding: inherit;
+
+			img {
+				float: left;
+				margin-top: 8%;
+				padding-left: 10%;
+				}
+			h4 {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: right;
+			}
+			p {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: right;
+				margin-top: 5%;
+			}
+			a{
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				letter-spacing: 2px;
+				display: block;
+				text-decoration: none;
+				text-align: center;
+			}	
+		}
+		.cc {
+			background-color: #3b2466;
+			float: left;
+			width: 100%;
+			padding: inherit;
+			padding-top: 10%;
+			padding-bottom: 5%;
+
+			img {
+				float: right;
+				margin-right: 10%;
+				padding-top: 2%;
+			}
+			h4 {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: left;
+				margin-top: -3%;
+				margin-left: 5%;
+			}
+			p {
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				letter-spacing: 3px;
+				float: left;
+			}
+			a{
+				font-family: swiss;
+				font-weight: bold;
+				color: white;
+				letter-spacing: 2px;
+				display: block;
+				text-decoration: none;
+				padding-top: 10%;
+				padding-left: 47%;
+			}
+		}
 }
 #social {
-	width
-	.socials {
-		width: 100%;
-		height: relative;
-		background-color: #7e5ba0;
-	}
+	width:100%;
+	background-color: #7E5BA0;
+	float: left;
 	#fb {
-		float: left;
-		margin-top: 10%;
-		position: inline-block;
-		width: 33%;
 	}
 	#twitter {
-		float: left;
-		margin-top: 10%;
-		width: 33%;
 	}
 	#insta {
-		float: left;
-		margin-top: 10%;
-		width: 33%;
+
 	}
 	p {
 		font-family: swiss;
 		font-weight: bold;
 		font-size: 24px;
 		text-align: center;
-	}
-	
+		color: white;
+		letter-spacing: 3px;
+		margin-top: 2%;
+	}	
 }
 #footer {
 	background-color: #f5d9e6;
 	width: 100%;
+	.container {
+		width: 100%;
+		float: left;
+		margin-top: -30%;
+	}
+	img {
+		text-align: center;
+	}
 }
 }
